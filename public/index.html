@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CPSC 481 T02 G1</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.8.3/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.8.3/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.8.3/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.8.3/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.8.3/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> 
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet"> 
+    <link href="./style.css" rel="stylesheet"> 
+  </head>
+  <body>
+      <div class="container" id="home">
+          <br>
+          <div class="row">
+            <div class="col-lg-6">
+              <div style="margin: auto">
+                  <iframe width="360" height="640" src="https://xd.adobe.com/embed/f3d3ba68-6e70-4aee-568c-afa77b0a18cd-85e2/?fullscreen" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <br><br>
+              <h3> A CPSC481 TEAM PROJECT </h3>
+                <br>
+                <div>
+                  <a href="#" id="contract">P0: TEAM CONTRACT</a>
+                </div><!--btn 1-->
+                <div id="research">
+                  <a href="#">P1: RESEARCH</a>
+                </div><!--btn 2-->
+                <div id="loFi">
+                  <a href="#">P2: MOCKUP</a>
+                </div><!--btn 3-->
+                <div id="evaluation">
+                  <a href="#">P3: HEURISTIC EVALUATION</a>
+                </div>
+                <!-- btn 4 -->
+                <div id="report">
+                  <a href="#">P4: FINAL REPORT</a>
+                </div>
+                <!-- btn 5 -->
+            </div><!-- header content -->
+          </div><!-- head row -->
+
+      </div><!-- home -->
+      
+      <div class="pdfContainer container" id="contractContainer">
+          <p class="return">
+            <a href="#"><i class="fas fa-arrow-circle-left"></i></a>
+          </p>
+          <p style="text-align: center">
+              <embed src="TeamContract-Handout.pdf" width="800px" height="2100px" />
+          </p>
+      </div><!-- pdf container for contract-->
+
+      <div class="pdfContainer container" id="evaluationContainer">
+          <p class="return">
+            <a href="#"><i class="fas fa-arrow-circle-left"></i></a>
+          </p>
+          <p style="text-align: center">
+              <embed src="481P3summary.pdf" width="800px" height="2100px" />
+          </p>
+      </div><!-- pdf container for evaluation -->
+
+      <div class="pdfContainer container" id="reportContainer">
+        <p class="return">
+          <a href="#"><i class="fas fa-arrow-circle-left"></i></a>
+        </p>
+        <p style="text-align: center">
+            <embed src="481finalreport.pdf" width="800px" height="2100px" />
+        </p>
+      </div><!-- pdf container for report -->
+
+      <div class="pdfContainer container" id="researchContainer">
+        <div class="row">
+          <div class="col-lg-6">
+              <p class="return">
+                  <a href="#"><i class="fas fa-arrow-circle-left"></i></a>
+                </p>
+          </div><!-- first 6 fol-->
+          <div class="col-lg-6">
+              <p style="text-align: right"><a style="font-size:1em" href="https://goo.gl/forms/Ux3oVgmKTMVx7Xro2">Click here</a> for the survey link</p>
+          </div> <!-- next 6 col -->
+        </div> <!-- first row-->
+        <div class="row">
+            <p style="text-align: center">
+                <embed src="./CSPC481 P1_ User Research.pdf" width="800px" height="2100px" />
+            </p>
+        </div><!-- pdf row -->
+      </div><!-- pdf container for research-->
+
+      <div class="pdfContainer container" id="prototypeContainer">
+        <div class="row">
+          <div class="col-lg-6">
+              <p class="return">
+                  <a href="#"><i class="fas fa-arrow-circle-left"></i></a>
+                </p>
+          </div><!-- first 6 fol-->
+          <div class="col-lg-6">
+              <p style="text-align: right"><a style="font-size:1em" href="./FeedMeV4.bmpr">Click here</a> for the balsamiq file</p>
+          </div> <!-- next 6 col -->
+        </div> <!-- first row-->
+        <div class="row">
+            <p style="text-align: center">
+                <embed src="./FeedMeV4.pdf" width="800px" height="2100px" />
+            </p>
+        </div><!-- pdf row -->
+      </div><!-- pdf container for prototypes-->
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+      <script src="./script.js"></script>
+  </body>
+</html>

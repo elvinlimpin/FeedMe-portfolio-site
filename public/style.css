@@ -1,0 +1,119 @@
+@media screen and (max-width: 992px) {
+    #main-globe {
+      font-size: 10em;
+      padding-bottom: 0em;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    #main-globe {
+      margin-top: 0.25em;
+      font-size: 12em;
+      padding-bottom: 0em;
+    }
+  }
+  
+  #nav-row a {
+    text-align: center;
+  }
+  
+  #fact-page {
+    color: #ad0000;
+  }
+  
+  @media screen and (max-width: 992px) {
+    #nav-globe {
+      font-size: 2em !important;
+      padding-bottom: 0em !important;
+      margin-top: -0.1em !important;
+    }
+
+    #rightIfBig {
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    #nav-globe {
+      font-size: 3.5em !important;
+      padding-bottom: 0em !important;
+      margin-top: -0.2em !important;
+    }
+
+    #rightIfBig {
+      text-align: right;
+      margin-right: 0.5em;
+    }
+  }
+  
+  .row {
+    margin-top: 2em;
+  }
+  
+  ::selection {
+    background: #ad0000;
+    color: white;
+  }
+  
+  div {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+  }
+  @media screen and (max-width: 992px) {
+    div {
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    div {
+      text-align: left;
+    }
+  }
+  div h1 {
+    font-size: 5em;
+    font-weight: 600;
+  }
+  div h3 {
+    font-size: 3em;
+    font-weight: 600;
+    color: #ad0000;
+  }
+  div h2 {
+    font-weight: 600;
+  }
+  div h4 {
+    margin: 0 0 0 0;
+    font-size: 0.7em;
+  }
+  
+  a {
+    font-size: 2em;
+    color: black;
+    text-align: left;
+  }
+  
+  a:hover {
+    color: #ad0000;
+  }
+  
+  ul {
+    font-weight: 400;
+    list-style-type: square;
+    font-size: 1.1em;
+    text-decoration: underline;
+  }
+  ul li {
+    margin-bottom: 0.2em;
+    text-align: left;
+  }
+  ul li:hover {
+    color: #ad0000;
+  }
+  
+  #go-btn {
+    padding: 0.5em 2em 0.5em 2em;
+  }
+  
+  #go-btn:hover {
+    color: white;
+    background-color: #ad0000;
+  }
+  
